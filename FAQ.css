@@ -1,0 +1,47 @@
+body {
+  background: url(project-3.jpg) no-repeat center center /cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.accordion {
+  width: 65%;
+  background-color: lightgrey;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.accordion .accordion-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.accordion .content-container .question {
+  padding: 18px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  /* this is used in order to achieve the minimize/maximize action of the questions */
+  position: relative;
+}
+
+.accordion .content-container .question::after {
+  content: '+';
+
+  position: absolute;
+  right: 10px;
+}
+
+.accordion .content-container .answer {
+  padding-top: 15px;
+  font-size: 22px;
+  line-height: 1.5;
+  width: 100%;
+
+  /* if the content is too much it will overflow, therefore, the following attribute is used*/
+  height: 0px;
+  overflow: hidden;
+  transition: .5s;
+}
