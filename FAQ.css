@@ -45,3 +45,20 @@ body {
   overflow: hidden;
   transition: .5s;
 }
+
+/* JS Style */
+.accordion .content-container.active .answer {
+    height: 150px;
+}
+
+.accordion .content-container.active .question {
+    font-size: 18px;
+    transition: .5s;
+}
+
+/* to put the closure(-) animation */ 
+.accordion .content-container.active .question::after {
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
