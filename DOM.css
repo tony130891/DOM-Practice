@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(project-5.jpg) no-repeat center center /cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-task-container {
+  width: 350px;
+  padding: 20px 10px;
+  border-radius: 20px;
+  background: white;
+  display: flex;
+}
+
+input {
+  flex: 2;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#add-task {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+#add-task::after {
+  content: '+';
+}
+
+#add-task::hover {
+  background-color: green;
+  color: white;
+}
